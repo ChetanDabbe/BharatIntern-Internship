@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- <script src="./script.js"></script> -->
+</head>
+
+<body>
+    <form id="registrationForm" action="/submit" method="POST">
+        <div class="container">
+            <h1 style="text-align: center; color:rgb(255, 64, 0); font-family: cursive;">COURSE REGISTRATION FORM</h1>
+            <div class="container1">
+                <label for="#"><b>Firstname</b></label>
+                <br>
+                <input type="text" placeholder="Firstname " name="firstName" id="fname">
+                <br>
+                <label for="#"><b>Middlename</b></label>
+                <br>
+                <input type="text" placeholder="Middlename " name="middleName" id="mname">
+                <br>
+                <label for="#"><b>Lastname</b></label>
+                <br>
+                <input type="text" placeholder="Lastname " name="lastName" id="lname">
+                <br>
+                <br>
+                <label for="#"><b>Course:</b>
+                    <select name="course" id="course_list">
+                        <option value="Android">Android</option>
+                        <option value="Web">Web</option>
+                        <option value="AI">AI</option>
+                        <option value="AWS">AWS</option>
+                    </select>
+                </label>
+                <br>
+                <br>
+                <label for="Gender"><b>Gender</b></label>
+                <br>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label><br>
+                <br>
+                <label for="#"><b>Phone</b>
+                    <br>
+                    <input type="text" class="common" placeholder="+91" name="phone" id="phone">
+                </label>
+                <br>
+                <label for="#"><b>City</b>
+                    <br>
+                    <input type="text" class="common" placeholder="City" name="city" id="city">
+                </label>
+                <br>
+                <label for="#"><b>Email</b>
+                    <br>
+                    <input type="email" placeholder="Enter Email" class="common" required name="email" id="email">
+                </label>
+                <br>
+                <label for="#"><b>Password</b>
+                    <br>
+                    <input type="password" placeholder="Enter Password" class="common" required name="password"
+                        id="pass">
+                </label>
+                <br>
+                <label for="#"><b>Confirm Password</b>
+                    <br>
+                    <input type="password" placeholder="Confirm Password" class="common" required
+                        name="confirm_Password">
+                </label>
+                <br>
+                <button type="submit" id="submit_btn" onclick="myfunction()">Register</button>
+                <!-- <button type="submit" id="submit_btn">Refresh</button> -->
+            </div>
+        </div>
+    </form>
+
+    <script>
+        function myfunction()
+        {   
+            alert("Registration successful!");
+
+        }
+
+    </script>
+</body>
+
+</html>

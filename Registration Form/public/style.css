@@ -1,0 +1,49 @@
+body{
+    background-color: rgba(222, 184, 135, 0.252);
+}
+.container {
+    width: 600px;
+    height: 800px;
+    border: 2px solid black;
+    /* box-shadow: 5px 10px solid rgb(207, 24, 24); */
+    background-color: rgba(0, 255, 255, 0.449);
+    position:absolute;
+    /* top:10%; */
+    left:30%;
+    
+}
+
+/* .container1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+#fname,#mname,#lname,.common{
+    width:80%;
+    height:27px;
+    margin-bottom: 10px;
+}
+.container1{
+    margin-left: 50px;
+}
+
+.common{
+    margin-top:4px;
+    margin-bottom:10px;
+}
+
+#submit_btn{
+    margin-top:7px;
+    width:81.5%;
+    height:35px;
+    font-size: 17px;
+    color:white;
+    background-color: olivedrab;
+    cursor: pointer;
+}
+
+#submit_btn:hover{
+    background-color: rgba(0, 0, 255, 0.692);
+}
